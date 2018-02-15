@@ -249,9 +249,38 @@
     <Compile Include="Migrations\201802151454396_UpdatingCustomerBirthdayDate.Designer.cs">
       <DependentUpon>201802151454396_UpdatingCustomerBirthdayDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802151515190_AlteringMovieModel.cs" />
+    <Compile Include="Migrations\201802151515190_AlteringMovieModel.Designer.cs">
+      <DependentUpon>201802151515190_AlteringMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151521447_AddGenres.cs" />
+    <Compile Include="Migrations\201802151521447_AddGenres.Designer.cs">
+      <DependentUpon>201802151521447_AddGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151524095_DeleteMovies.cs" />
+    <Compile Include="Migrations\201802151524095_DeleteMovies.Designer.cs">
+      <DependentUpon>201802151524095_DeleteMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151525448_CreatingGenreFKInMovies.cs" />
+    <Compile Include="Migrations\201802151525448_CreatingGenreFKInMovies.Designer.cs">
+      <DependentUpon>201802151525448_CreatingGenreFKInMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151528414_PopulateGenres.cs" />
+    <Compile Include="Migrations\201802151528414_PopulateGenres.Designer.cs">
+      <DependentUpon>201802151528414_PopulateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151533212_PopulateMovies.cs" />
+    <Compile Include="Migrations\201802151533212_PopulateMovies.Designer.cs">
+      <DependentUpon>201802151533212_PopulateMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151555289_AlteringMovieModel1.cs" />
+    <Compile Include="Migrations\201802151555289_AlteringMovieModel1.Designer.cs">
+      <DependentUpon>201802151555289_AlteringMovieModel1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genres.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -323,6 +352,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -379,6 +409,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802151454396_UpdatingCustomerBirthdayDate.resx">
       <DependentUpon>201802151454396_UpdatingCustomerBirthdayDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151515190_AlteringMovieModel.resx">
+      <DependentUpon>201802151515190_AlteringMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151521447_AddGenres.resx">
+      <DependentUpon>201802151521447_AddGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151524095_DeleteMovies.resx">
+      <DependentUpon>201802151524095_DeleteMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151525448_CreatingGenreFKInMovies.resx">
+      <DependentUpon>201802151525448_CreatingGenreFKInMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151528414_PopulateGenres.resx">
+      <DependentUpon>201802151528414_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151533212_PopulateMovies.resx">
+      <DependentUpon>201802151533212_PopulateMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151555289_AlteringMovieModel1.resx">
+      <DependentUpon>201802151555289_AlteringMovieModel1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
