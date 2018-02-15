@@ -10,6 +10,17 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public MoviesController() {
+            this._context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            this._context.Dispose();
+        }
+
         // GET: Movies/Random
         public ActionResult Random()
         {
@@ -32,19 +43,19 @@ namespace Vidly.Controllers
         // GET: Movies
         public ViewResult Index()
         {
-            var movies = this.GetMovies();
+            var movies = this._context.Movies.ToList();
 
             return View(movies);
         }
 
-        private IEnumerable<Movie> GetMovies()
-        {
-            return new List<Movie>
-            {
-                new Movie { Id = 1, Name = "Avatar" },
-                new Movie { Id = 2, Name = "King Kong" }
-            };
-        }
+        //private IEnumerable<Movie> GetMovies()
+        //{
+        //    return new List<Movie>
+        //    {
+        //        new Movie { Id = 1, Name = "Avatar" },
+        //        new Movie { Id = 2, Name = "King Kong" }
+        //    };
+        //}
 
         /**********************************
          * 

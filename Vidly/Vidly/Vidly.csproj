@@ -209,6 +209,46 @@
     <Compile Include="Migrations\201802150041562_AddMembershipType.Designer.cs">
       <DependentUpon>201802150041562_AddMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802150048156_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201802150048156_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201802150048156_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150056073_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201802150056073_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201802150056073_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151319247_InsertingCustomers.cs" />
+    <Compile Include="Migrations\201802151319247_InsertingCustomers.Designer.cs">
+      <DependentUpon>201802151319247_InsertingCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151343493_InitialModel1.cs" />
+    <Compile Include="Migrations\201802151343493_InitialModel1.Designer.cs">
+      <DependentUpon>201802151343493_InitialModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151431248_ApplyAnnotationsToMovieName.cs" />
+    <Compile Include="Migrations\201802151431248_ApplyAnnotationsToMovieName.Designer.cs">
+      <DependentUpon>201802151431248_ApplyAnnotationsToMovieName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151433075_PopulatingMovieTable.cs" />
+    <Compile Include="Migrations\201802151433075_PopulatingMovieTable.Designer.cs">
+      <DependentUpon>201802151433075_PopulatingMovieTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151441003_AddingColumnNameToMemberShipType.cs" />
+    <Compile Include="Migrations\201802151441003_AddingColumnNameToMemberShipType.Designer.cs">
+      <DependentUpon>201802151441003_AddingColumnNameToMemberShipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151442080_UpdatingMembershipTypesNames.cs" />
+    <Compile Include="Migrations\201802151442080_UpdatingMembershipTypesNames.Designer.cs">
+      <DependentUpon>201802151442080_UpdatingMembershipTypesNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151453342_AddingBirthdayDateColumnToCustomer.cs" />
+    <Compile Include="Migrations\201802151453342_AddingBirthdayDateColumnToCustomer.Designer.cs">
+      <DependentUpon>201802151453342_AddingBirthdayDateColumnToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151454396_UpdatingCustomerBirthdayDate.cs" />
+    <Compile Include="Migrations\201802151454396_UpdatingCustomerBirthdayDate.Designer.cs">
+      <DependentUpon>201802151454396_UpdatingCustomerBirthdayDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -309,6 +349,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802150041562_AddMembershipType.resx">
       <DependentUpon>201802150041562_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150048156_PopulateMembershipTypes.resx">
+      <DependentUpon>201802150048156_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150056073_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201802150056073_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151319247_InsertingCustomers.resx">
+      <DependentUpon>201802151319247_InsertingCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151343493_InitialModel1.resx">
+      <DependentUpon>201802151343493_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151431248_ApplyAnnotationsToMovieName.resx">
+      <DependentUpon>201802151431248_ApplyAnnotationsToMovieName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151433075_PopulatingMovieTable.resx">
+      <DependentUpon>201802151433075_PopulatingMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151441003_AddingColumnNameToMemberShipType.resx">
+      <DependentUpon>201802151441003_AddingColumnNameToMemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151442080_UpdatingMembershipTypesNames.resx">
+      <DependentUpon>201802151442080_UpdatingMembershipTypesNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151453342_AddingBirthdayDateColumnToCustomer.resx">
+      <DependentUpon>201802151453342_AddingBirthdayDateColumnToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151454396_UpdatingCustomerBirthdayDate.resx">
+      <DependentUpon>201802151454396_UpdatingCustomerBirthdayDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
