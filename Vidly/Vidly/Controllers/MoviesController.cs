@@ -62,18 +62,72 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
-        //private IEnumerable<Movie> GetMovies()
-        //{
-        //    return new List<Movie>
-        //    {
-        //        new Movie { Id = 1, Name = "Avatar" },
-        //        new Movie { Id = 2, Name = "King Kong" }
-        //    };
-        //}
+        // GET: Movies/New
+        public ActionResult New()
+        {
+            var genres = _context.Genres.ToList();
+
+            var viewModel = new MovieFormViewModel {
+                Genres = genres
+            };
+
+            return View("MovieForm", viewModel);
+        }
+
+        // GET: Movies/Edit/{id}
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+
+            if (movie.Id == 0)
+                return HttpNotFound();
+            
+            var genres = _context.Genres.ToList();
+
+            var viewModel = new MovieFormViewModel {
+                Movie  = movie,
+                Genres = genres
+            };
+
+            return View("MovieForm", viewModel);
+        }
+
+        // POST: Movies/Save
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            if (movie.Id == 0) {
+                _context.Movies.Add(movie);
+            }
+            else {
+                var movieDb = _context.Movies.Single(m => m.Id == movie.Id);
+
+                movieDb.Name = movie.Name;
+                movieDb.ReleaseDate = movie.ReleaseDate;
+                movieDb.DateAdded = movie.DateAdded;
+                movieDb.GenreId = movie.GenreId;
+                movieDb.NumberInStock = movie.NumberInStock;
+            }
+            
+            _context.SaveChanges();
+
+
+            return RedirectToAction("Index", "Movies");
+        }
 
         /**********************************
          * 
          * Exemplos
+
+
+        private IEnumerable<Movie> GetMovies()
+        {
+            return new List<Movie>
+            {
+                new Movie { Id = 1, Name = "Avatar" },
+                new Movie { Id = 2, Name = "King Kong" }
+            };
+        }
 
         public ActionResult Edit(int id)
         {

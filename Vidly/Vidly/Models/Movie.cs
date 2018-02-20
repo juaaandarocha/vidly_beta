@@ -20,8 +20,8 @@ namespace Vidly.Models
 
         public int NumberInStock { get; set; }
 
-        [Required]
         public Genres Genre { get; set; }
+        [Required]
         public byte GenreId { get; set; }
     }
 }
