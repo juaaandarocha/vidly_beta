@@ -16,6 +16,7 @@ namespace Vidly.Models
 
         public bool IsSubscribedToNewsletter { get; set; }
 
+        [Min18YearsIfAMember]
         public DateTime? BirthdayDate { get; set; }
 
         public MembershipType MembershipType { get; set; }
