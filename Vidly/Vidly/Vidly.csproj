@@ -211,6 +211,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="DTOs\CustomerDTO.cs" />
+    <Compile Include="DTOs\MembershipTypeDTO.cs" />
     <Compile Include="DTOs\MovieDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -298,6 +299,10 @@
     <Compile Include="Migrations\201802190025594_AddingGenreContext.cs" />
     <Compile Include="Migrations\201802190025594_AddingGenreContext.Designer.cs">
       <DependentUpon>201802190025594_AddingGenreContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802280005220_teste.cs" />
+    <Compile Include="Migrations\201802280005220_teste.Designer.cs">
+      <DependentUpon>201802280005220_teste.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -636,6 +641,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802190025594_AddingGenreContext.resx">
       <DependentUpon>201802190025594_AddingGenreContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802280005220_teste.resx">
+      <DependentUpon>201802280005220_teste.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
