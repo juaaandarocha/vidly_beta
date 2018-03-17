@@ -17,18 +17,6 @@
             <th>Delete</th>
         </tr>
     </thead>
-    <tbody>
-        @*@foreach (var cust in Model)
-        {
-            <tr>
-                <td>@Html.ActionLink(cust.Name, "Edit", "Customers", new { id = cust.Id }, null)</td>
-                <td>@cust.MembershipType.Name</td>
-                <td>
-                    <button data-customer-id="@cust.Id" class="btn-link js-delete">Delete</button>
-                </td>
-            </tr>
-        }*@
-    </tbody>
 </table>
 
 @section scripts
